@@ -7,25 +7,9 @@
 // Output: El 20 es divisible por 2.
 
 let number = parseInt(prompt("Ingrese un número:"));
-let bandera = 0;
 
-if(number%2 === 0){
-    alert(number + " es divisible por 2");
-    bandera=1;
-}
-if(number%3 === 0){
-    alert(number + " es divisible por 3");
-    bandera=1;
-}
-if(number%5 === 0){
-    alert(number + " es divisible por 5");
-    bandera=1;
-}
-if(number%7 === 0){
-    alert(number + " es divisible por 7");
-    bandera=1;
-}
-
-if(bandera===0){
-    alert(number + " no es divisible por 2, 3, 5, ni 7");
+if(number%2 === 0 || number%3 === 0 || number%5 === 0 || number%7 === 0){
+    alert(number + " es divisible por 2 o 3 o 5 o 7");
+}else{
+    alert(number + " no es divisible ni por 2, ni por 3, ni por 5, ni por 7");
 }
